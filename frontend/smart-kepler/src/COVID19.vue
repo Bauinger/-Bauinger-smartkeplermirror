@@ -1,13 +1,11 @@
 <template>
-  <JKUNews></JKUNews>
+  
 </template>
 
 <script>
-import JKUNews from './JKUNews';
 export default {
-  name: 'App',
+  name: 'COVID19',
   components: {
-    JKUNews
   },
   data: function() {
     return {

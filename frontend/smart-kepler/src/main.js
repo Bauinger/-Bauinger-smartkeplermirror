@@ -10,3 +10,5 @@ Vue.use(VueAxios, axios);
 new Vue({
   render: h => h(App),
 }).$mount('#app')
+
+Vue.component('JKUNews');
