@@ -1,11 +1,14 @@
 <template style="background: black;">
 <span>
+ <section v-if="errored">
+        <p>We're sorry, we're not able to retrieve this information at the moment, please try back later</p>
+ </section>
  <hooper :progress="true" :autoPlay="true" :playSpeed="20000" id="hooper">
     <slide v-bind:key="newer.textContent" v-for="newer in news" class="slider">
       {{newer.textContent}}
     </slide>
   </hooper>
-  <h3 id="title">JKU News</h3>
+  <h3 id="titleNews">JKU News</h3>
 </span>
 </template>
 
@@ -21,27 +24,39 @@ export default {
   data: function() {
     return {
       news : null,
+      errored: false,
+      timer : '',
     };
   },
   mounted() {
     this.loadNewsArea();
+    this.timer = setInterval(this.loadNewsArea, 3600000)
+  },
+  beforeDestroy (){
+    this.cancelAutoUpdate();
   },
   methods: {
     async loadNewsArea() {
       let parser = new DOMParser();
       let apiUrl = 'https://www.pervasive.jku.at/rss/rss.php?news&press&jobs&lva';
-      console.log("Button pressed");
-      let response = await this.axios.get(apiUrl);
+      let response = await this.axios.get(apiUrl)
+                                     .catch(error => {
+                                         console.log(error)
+                                         this.errored = true;
+                                       });
       let xmlDoc = parser.parseFromString(response.data,"text/xml");
       this.news = Array.from(xmlDoc.getElementsByTagName("title"));
       this.news.shift();
       console.log(this.news);
+    },
+    cancelAutoUpdate () {
+      clearInterval(this.timer);
     }
   }
 }
 </script>
 <style>
-  #title {
+  #titleNews {
     text-align: center;
   }
  .slider{

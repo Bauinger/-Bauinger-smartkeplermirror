@@ -13,7 +13,8 @@
     "hooper": "^0.3.4",
     "sass": "^1.34.0",
     "vue": "^2.6.11",
-    "vue-axios": "^3.2.4"
+    "vue-axios": "^3.2.4",
+    "vue-digital-clock": "^2.0.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
