@@ -11,6 +11,7 @@ import java.util.List;
 @RestController
 public class QuoteController {
 
+    @Autowired
     private final QuoteService quoteService;
 
     @Autowired
@@ -19,7 +20,7 @@ public class QuoteController {
     }
 
     @GetMapping("quote")
-    public List<Quote> getQuote() {
+    public List<Quote> getQuotes() {
         return quoteService.getQuote();
     }
 

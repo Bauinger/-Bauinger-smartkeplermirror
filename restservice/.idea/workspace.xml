@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4af58774-0ff3-4cbc-8c84-ef8c3b8dddfb" name="Default Changelist" comment="" />
+    <list default="true" id="4af58774-0ff3-4cbc-8c84-ef8c3b8dddfb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/jku/ce/jkq/controller/QuoteControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jkq.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jkq.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jku/ce/jkq/controller/QuoteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jku/ce/jkq/controller/QuoteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jku/ce/jkq/repository/QuoteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jku/ce/jkq/repository/QuoteRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jku/ce/jkq/service/QuoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jku/ce/jkq/service/QuoteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/jku/ce/jkq/JkqApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/jku/ce/jkq/JkqApplicationTests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,14 +58,82 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../teaching-2021.prse-exemplar-team1" />
   </component>
-  <component name="RunManager" selected="Spring Boot.JkqApplication">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
+  <component name="RunManager" selected="JUnit.QuoteControllerTest">
+    <configuration name="QuoteControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jkq" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jku.ce.jkq.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="jku.ce.jkq.controller" />
+      <option name="MAIN_CLASS_NAME" value="jku.ce.jkq.controller.QuoteControllerTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuoteControllerTest.countQuotesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jkq" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jku.ce.jkq.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="jku.ce.jkq.controller" />
+      <option name="MAIN_CLASS_NAME" value="jku.ce.jkq.controller.QuoteControllerTest" />
+      <option name="METHOD_NAME" value="countQuotesTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuoteControllerTest.getAllQuotes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jkq" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jku.ce.jkq.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="jku.ce.jkq.controller" />
+      <option name="MAIN_CLASS_NAME" value="jku.ce.jkq.controller.QuoteControllerTest" />
+      <option name="METHOD_NAME" value="getAllQuotes" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuoteControllerTest.getProductsList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jkq" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jku.ce.jkq.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="jku.ce.jkq.controller" />
+      <option name="MAIN_CLASS_NAME" value="jku.ce.jkq.controller.QuoteControllerTest" />
+      <option name="METHOD_NAME" value="getProductsList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuoteControllerTest.getQuotes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jkq" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jku.ce.jkq.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="jku.ce.jkq.controller" />
+      <option name="MAIN_CLASS_NAME" value="jku.ce.jkq.controller.QuoteControllerTest" />
+      <option name="METHOD_NAME" value="getQuotes" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -75,6 +152,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.QuoteControllerTest" />
+        <item itemvalue="JUnit.QuoteControllerTest.countQuotesTest" />
+        <item itemvalue="JUnit.QuoteControllerTest.getAllQuotes" />
+        <item itemvalue="JUnit.QuoteControllerTest.getQuotes" />
+        <item itemvalue="JUnit.QuoteControllerTest.getProductsList" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -86,6 +172,10 @@
       <updated>1618915768531</updated>
       <workItem from="1618915771390" duration="9421000" />
       <workItem from="1618931301272" duration="2644000" />
+      <workItem from="1620653791588" duration="173000" />
+      <workItem from="1620833156914" duration="3113000" />
+      <workItem from="1620904336057" duration="5845000" />
+      <workItem from="1621331553911" duration="99000" />
     </task>
     <servers />
   </component>
