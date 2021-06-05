@@ -1,14 +1,16 @@
 <template>
-  <div class='row'>
-    <div class="col-sm">
+  <div class='row align-items-center'>
+    <div class="col">
       <img src="./assets/logo.png" alt="jku-logo"/>
     </div>
-    <div class="col-sm">
+    <div class="col  text-center fw-bolder display-4">
       {{temperature + " ° C"}}
     </div> 
-    <div class="col-sm">
+    <div class="col text-end fw-bolder">
       {{date.toLocaleString()}} <br>
-      <digital-clock/>
+      <span class="display-4 fw-bolder">
+        <digital-clock/>
+      </span>
     </div>    
   </div>
 </template>

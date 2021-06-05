@@ -1,14 +1,14 @@
-<template style="background: black;">
+<template>
 <span>
  <section v-if="errored">
         <p>We're sorry, we're not able to retrieve this information at the moment, please try back later</p>
  </section>
  <hooper :progress="true" :autoPlay="true" :playSpeed="20000" id="hooper">
-    <slide v-bind:key="newer.textContent" v-for="newer in news" class="slider">
+    <slide v-bind:key="newer.textContent" v-for="newer in news" class="slider fs-3">
       {{newer.textContent}}
     </slide>
   </hooper>
-  <h3 id="titleNews">JKU News</h3>
+  <div class="text-center fw-bold fs-5">JKU News</div>
 </span>
 </template>
 
@@ -55,12 +55,3 @@ export default {
   }
 }
 </script>
-<style>
-  #titleNews {
-    text-align: center;
-  }
- .slider{
-   text-align: center;
-   padding: 90px;
- }
-</style>

@@ -3,13 +3,19 @@
     <section v-if="errored">
             <p>We're sorry, we're not able to retrieve this information at the moment, please try back later</p>
     </section>
-    <h3 id="titleCOVID19">COVID-19:</h3>
-    <h5>Bestätigt:</h5>
-    {{recovered.toLocaleString('de')}}
-    <h5>Tote:</h5>
-    {{dead.toLocaleString('de')}}
-    <h5>Genesene:</h5>
-    {{recovered.toLocaleString('de')}}
+    <div class="display-6 fw-bold">COVID-19:</div>
+    <div class="fs-4 fw-bold">Bestätigt:</div>
+     <div class="fs-4">
+       {{recovered.toLocaleString('de')}}
+    </div>
+    <div class="fs-4 fw-bold">Tote:</div>
+     <div class="fs-4">
+       {{dead.toLocaleString('de')}}
+    </div>
+    <div class="fs-4 fw-bold">Genesene:</div>
+    <div class="fs-4">
+       {{recovered.toLocaleString('de')}}
+    </div>
   </span>
 </template>
 

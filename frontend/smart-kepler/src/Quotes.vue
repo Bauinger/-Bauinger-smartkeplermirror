@@ -4,11 +4,11 @@
         <p>We're sorry, we're not able to retrieve this information at the moment, please try back later</p>
  </section>
  <hooper :progress="true" :autoPlay="true" :playSpeed="20000" id="hooper">
-    <slide v-bind:key="quote.quoteText" v-for="quote in quotes" class="slider">
+    <slide v-bind:key="quote.quoteText" v-for="quote in quotes" class="slider fs-3">
       {{quote.quoteText}}
     </slide>
   </hooper>
-  <h3 id="titleNews">Johannes Kepler</h3>
+  <div class="text-center fw-bold fs-5">Johannes Kepler</div>
 </span>
 </template>
 
@@ -53,9 +53,7 @@ export default {
 }
 </script>
 <style>
-  #titleNews {
-    text-align: center;
-  }
+
  .slider{
    text-align: center;
    padding: 90px;

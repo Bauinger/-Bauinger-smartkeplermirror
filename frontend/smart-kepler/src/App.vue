@@ -1,10 +1,18 @@
 <template>
-  <span>
+ <div class="text-white m-4">
+  <div class="align-top">
     <Header></Header>
+  </div>
+  <div style="margin-top: 100px !important">
     <COVID19></COVID19>
+  </div>
+  <div style="margin-top: 50px !important">
     <JKUNews></JKUNews>
+  </div>
+  <div style="margin-top: 50px !important">
     <Quotes></Quotes>
-  </span>
+  </div>
+</div>
 </template>
 
 <script>
