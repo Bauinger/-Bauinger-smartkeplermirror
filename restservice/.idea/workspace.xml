@@ -7,15 +7,8 @@
     <list default="true" id="4af58774-0ff3-4cbc-8c84-ef8c3b8dddfb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../frontend/smart-kepler/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/smart-kepler/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/smart-kepler/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/smart-kepler/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/smart-kepler/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/smart-kepler/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/smart-kepler/src/COVID19.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/smart-kepler/src/COVID19.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/smart-kepler/src/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/smart-kepler/src/Header.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/smart-kepler/src/assets/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/smart-kepler/src/assets/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/smart-kepler/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/smart-kepler/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/smart-kepler/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/smart-kepler/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jku/ce/jkq/controller/QuoteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jku/ce/jkq/controller/QuoteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jku/ce/jkq/entities/Quote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jku/ce/jkq/entities/Quote.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
