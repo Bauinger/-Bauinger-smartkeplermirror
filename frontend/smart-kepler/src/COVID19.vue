@@ -5,7 +5,11 @@
     </section>
     <h3 id="titleCOVID19">COVID-19:</h3>
     <h5>Bestätigt:</h5>
-    {{}}
+    {{recovered.toLocaleString('de')}}
+    <h5>Tote:</h5>
+    {{dead.toLocaleString('de')}}
+    <h5>Genesene:</h5>
+    {{recovered.toLocaleString('de')}}
   </span>
 </template>
 
@@ -14,7 +18,7 @@ export default {
   name: 'COVID19',
   data: function() {
     return {
-      recovered : 0,
+      recovered : '',
       confirmed: '',
       dead : '',
       errored: false,
@@ -30,17 +34,17 @@ export default {
   },
   methods: {
     async loadCovidArea() {
-      let apiUrl = 'https://covid-api.mmediagroup.fr/v1/cases?country=Austria';
-     
-       await this.axios.get(apiUrl)
-      .then(x => {console.log(x.data)})
-                                     .catch(error => {
-                                         console.log(error)
-                                         this.errored = true;
+      let apiUrl = 'https://coronavirus-19-api.herokuapp.com/countries/austria';
+      let res= await this.axios.get(apiUrl)
+                               .catch(error => {
+                                        console.log(error)
+                                        this.errored = true;
                                      });
-    //   this.recovered = response.data.recovered;
-    //   this.confirmed = response.data.confirmed;
-    //   this.dead = response.data.dead;
+      let data = res.data;
+      this.recovered = data.recovered;
+      this.confirmed = data.cases;
+      this.dead = data.deaths;
+      console.log(data);
     },
     cancelAutoUpdate () {
       clearInterval(this.timer);
