@@ -28,6 +28,7 @@
 > STRG + ALT + F3
 11. Führe die drei Bash-Befehle aus:
 ````bash
+curl https://deb.nodesource.com/setup_14.x | sudo -E bash -
 sudo apt-get update
 sudo apt install nodejs
 ````
@@ -39,16 +40,63 @@ npm -v
 13. Es sollten jetzt Versionsverweise eingeblendet werden. (Für Hilfe [hier](https://github.com/nodesource) klicken)
 
 #### Installation von NGINX
+1. Führe folgenden Bash-Befehl aus:
+````bash
+sudo apt install nginx
+````
+2. Anschließend überprüfe ob die Installation erfolgreich war und ob der Webserver läuft mit:
+````bash
+service nginx status
+````
+3. Führe den Befehl aus:
+````bash
+ifconfig
+````
+4. Unter inet-adress findest du deine IP-Adresse (z.B.: 192.168.3.45) notiere diese.
+5. Drücke die Tasten:
+> STRG + ALT + F1
+6. Beende den Vollbildmodus mit der Taste:
+> F11
+7. Tippe in der Adresszeile folgendes ein (ersetze 'meine-IP-Adresse' durch die vorher notierte Adresse):
+````bash
+http://meine-IP-Adresse
+````
+8. Nachdem du dies Seite geöffnet hat müsste eine Seite erscheinen auf der "Welcome to nginx!" steht.
+9. Drücke die Tasten:
+> STRG + ALT + F3
+10. Anschließend fügen wir ngnix noch zu systemctl hinzu um bei jedem Neustart des Raspberry Pis auch den Server zu starten:
+````bash
+sudo systemctl enable nginx
+````
 
+#### Allow CORS Plugin 
+1. Drücke die Tasten:
+> STRG + ALT + F1
+2. Suche nach folgendem Link https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=de
+3. Installiere das Plugin und aktiviere es
 #### Code von Github Klonen
 1. Installiere git mit:
 ````bash
 sudo apt install git
 `````
-Klone das Repository von Git mit:
+2. Klone das Repository von Git mit:
 ````bash
 git clone https://github.com/Bauinger/Bauinger-smartkeplermirror.git
 ````
+### Installation des Frontends
+1. Wechsle in das Verzeichnis:
+````bash
+cd Bauinger-smartkeplermirror/frontend/smart-kepler
+````
+3. Führe den Befehl zur Installation der node_modules aus:
+````bash
+npm install
+````
+3. Führe den Befehl zur Kompilierung der Vue-Application auf:
+````bash
+npm run build
+````
+
 
 
 ## 2. Installationsanleitung des Frontends und des REST Services
