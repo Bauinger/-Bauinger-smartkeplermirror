@@ -121,4 +121,7 @@ sudo unzip /var/www/html
 5. Wechsle wieder auf die Webseite:
 > STRG + ALT + F1
 
+## 3. Installation des REST Services
+
+Aus dem Grund dass das Backend nicht intsalliert wurde (Performanceprobleme) habe ich die Beschreibung der Installation nicht gemacht aber [hier](https://medium.com/swlh/how-to-run-spring-boot-application-on-raspberry-pi-using-docker-d633e15ffff2) gibt es eine Anleitung.
 
