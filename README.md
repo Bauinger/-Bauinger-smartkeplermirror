@@ -1,4 +1,18 @@
-# Smartkeplermirror
+# SmartKeplerMirror
+
+## 0. Einführung
+Bilder des Smart Mirrors:
+![Smart Mirror Picture 1](https://raw.githubusercontent.com/Bauinger/Bauinger-smartkeplermirror/main/docassets/1.jpeg)
+![Smart Mirror Picture](https://raw.githubusercontent.com/Bauinger/Bauinger-smartkeplermirror/main/docassets/2.jpeg)
+### Bauanleitung für den Smart Mirror Kepler
+Wenn du einen Smart Mirror bauen willst,
+findest du [hier]() eine Bauanleitung.
+
+Kurze Information zum REST Service:
+Der REST Service und das frontend sind beide voll funktionsfähig, aber der Raspberry PI ist nicht leistungsfähig genug um den REST Service laufen zu lassen (Startupzeiten von bsi zu 20 min und Timeouts). Aus diesem Grund wurde eine [NeDB](https://github.com/louischatriot/nedb), das ist eine built-in NodeJS-Datenbank, statt des REST Service verwendet.
+
+Weiters wurde anstatt eines NodeJS Servers ein NGINX Webserver verwendet, weil dass aufetzen so um einiges einfacher war.
+
 ## 1. Aufsetzen des Raspberry PI
 ### Benötigte Ressourcen
 * Raspberry PI 3 (Nicht getestet auf 1 & 2 / 4 ist nicht kompatibel mit chilipe-kiosk)
@@ -83,12 +97,12 @@ sudo apt install git
 ````bash
 git clone https://github.com/Bauinger/Bauinger-smartkeplermirror.git
 ````
-### Installation des Frontends
+## 2. Installation des Frontends
 1. Wechsle in das Verzeichnis:
 ````bash
 cd Bauinger-smartkeplermirror/frontend/smart-kepler
 ````
-3. Führe den Befehl zur Installation der node_modules aus:
+2. Führe den Befehl zur Installation der node_modules aus:
 ````bash
 npm install
 ````
@@ -96,7 +110,15 @@ npm install
 ````bash
 npm run build
 ````
+4. Führe die Befehle aus um die Dateien in den Webserver einzubetten:
+````bash
+sudo zip -r dist.zip /Bauinger-smartkeplermirror/frontend/smart-kepler/dist
+sudo mv /Bauinger-smartkeplermirror/frontend/smart-kepler/dist.zip /var/www/html
+sudo unzip /var/www/html
+````
+>Tipp: wenn zu wenig Speicherplatz auf dem Raspberry Pi frei ist lass npm run build auf einem anderen PC laufen und kopiere den Dist Ordner mit einer Cloud auf den Raspberry PI.
+
+5. Wechsle wieder auf die Webseite:
+> STRG + ALT + F1
 
 
-
-## 2. Installationsanleitung des Frontends und des REST Services
